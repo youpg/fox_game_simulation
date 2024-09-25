@@ -20,13 +20,23 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
                 - from bottom left to top right -
                 - from bottom right to top left - )
 
-     # Examples
-     | Example horizontal | | | | | | |
-     | - | - | - | - |
-     | F | O | X | O |
-     | F | O | X | O |
-     | F | O | X | O |
-     | F | O | X | O |
+     # Example Directions
+     # Horizontal from left to right:
+     ![image](https://github.com/user-attachments/assets/93f24cf4-46de-4804-8387-533494b44723)
+     # Horizontal from right to left:
+     ![image](https://github.com/user-attachments/assets/77b0d323-2730-4a0c-b0ce-7d1181709d17)
+     # Vertical from top to bottom:
+     ![image](https://github.com/user-attachments/assets/5eccc8a7-2de5-44a2-95ee-990a090f2b7e)
+     # Vertical from bottom to top:
+     ![image](https://github.com/user-attachments/assets/0d4da0cd-4836-4c17-adeb-5149e433fda5)
+     # Diagonal from top left to bottom right:
+     ![image](https://github.com/user-attachments/assets/e33f11d9-6451-478f-b3e9-4f92fb5107cd)
+     # Diagonal from top right to bottom left:
+     ![image](https://github.com/user-attachments/assets/f6b1ac5d-2333-4b9b-a7b8-3901a6f03ce2)
+     # Diagonal from bottom left to top right:
+     ![image](https://github.com/user-attachments/assets/b049b6c2-7172-4382-a9d4-7dc0d2513729)
+     # Diagonal from bottom right to top left:
+     ![image](https://github.com/user-attachments/assets/4f0ca867-f312-4abd-bc8a-2124835c6a38)
 
 ## Features
 
@@ -34,6 +44,7 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
 - Parallel processing with Rayon for faster simulation
 - User input for the number of games to simulate
 - Accurate probability calculation
+- Accurate calculation timing
 
 ## Dependencies
 
@@ -41,6 +52,7 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
 - `rayon`: For parallel iteration
 - `std::sync::atomic`: For thread safety
 - `std::io`: For user input
+- `std::time`: For timing the calculations
 
 ## How It Works
 
@@ -50,7 +62,7 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
    - A board is created and filled with randomly chosen tiles in the bag.
    - The board is checked for the presence of "FOX" in the specified directions.
    - The result is recorded and stored (fox_found or fox_not_found)
-4. After all simulations, the program calculates and displays the percentages
+4. After all simulations, the program calculates and displays the percentages and the time it took for the calculations
 
 
 ## Code Structure
@@ -70,10 +82,9 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
 ## How to Run
 
 1. Install Rust and Cargo on your system: https://www.rust-lang.org/tools/install
-2. Clone this repository: git clone https://github.com/youpg/fox_game_simulation.git
-3. Navigate to the project directory: cd fox_game_simulation
-4. Build the program: cargo build --release
-5. Run the program: cargo run --release
+2. Clone this repository: ```git clone https://github.com/youpg/fox_game_simulation.git```
+3. Navigate to the project directory: ```cd fox_game_simulation```
+5. Run the program: ```cargo run --release```
 6. Enter the number of games to simulate when the program asks.
 
 ## Results
@@ -83,5 +94,5 @@ The program will output the following statistics:
 - Percentage of games where "FOX" was found
 - Number of games where "FOX" was not found
 - Percentage of games where "FOX" was not found
-
-  
+- Total time it took for all calculations
+- Average time it took per calculation
