@@ -15,10 +15,10 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
 4. The word FOX is found when it appears:
    - horizontal (from left to right or right to left)
    - vertical (from top to bottom or bottom to top)
-   - diagonal ( - from top left to bottom right or
-                - from top right to bottom left or
-                - from bottom left to top right or
-                - from bottom right to top left )
+   - diagonal ( - from top left to bottom right\n
+                - from top right to bottom left\n
+                - from bottom left to top right\n
+                - from bottom right to top left)
 
 
 ## Features
