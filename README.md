@@ -21,6 +21,7 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
                 - from bottom right to top left - )
 
      # Examples
+     | Example horizontal |
      | - | - | - | - |
      | F | O | X | O |
      | F | O | X | O |
