@@ -85,7 +85,7 @@ This rust program simulates a board game on finding the word "FOX" in a 4x4 grid
 2. Clone this repository: ```git clone https://github.com/youpg/fox_game_simulation.git```
 3. Navigate to the project directory: ```cd fox_game_simulation```
 5. Run the program: ```cargo run --release```
-6. Enter the number of games to simulate when the program asks.
+6. Enter the number of games to simulate when the program asks and press enter.
 
 ## Results
 
